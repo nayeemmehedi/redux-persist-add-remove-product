@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment } from "../../reduxCart/ReducerCart";
@@ -6,7 +6,7 @@ import { decrement, increment } from "../../reduxCart/ReducerCart";
 import { newValue } from "./ID";
 
 const FirstView = () => {
-  const [value, setvalue] = useState(0);
+
 
   const count = useSelector((state) => state.counter.value);
 
